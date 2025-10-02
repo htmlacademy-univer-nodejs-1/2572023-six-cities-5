@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import {
-  CLIApplication, GenerateCommand,
+  CLIApplication,
+  GenerateCommand,
   HelpCommand,
   ImportCommand,
   VersionCommand,
