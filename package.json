@@ -19,6 +19,8 @@
     "cli": "npm run build && node ./dist/main.cli.js"
   },
   "devDependencies": {
+    "@types/convict": "6.1.6",
+    "@types/convict-format-with-validator": "6.0.5",
     "@types/node": "18.16.3",
     "@typescript-eslint/eslint-plugin": "5.46.0",
     "@typescript-eslint/parser": "5.46.0",
@@ -34,11 +36,14 @@
     "npm": ">=8"
   },
   "dependencies": {
-    "convict": "^6.2.4",
-    "dayjs": "^1.11.18",
-    "dotenv": "^17.2.3",
-    "got": "^14.4.9",
-    "json-server": "^1.0.0-beta.3",
-    "pino": "^10.0.0"
+    "convict": "6.2.4",
+    "convict-format-with-validator": "6.2.0",
+    "dayjs": "1.11.18",
+    "dotenv": "17.2.3",
+    "got": "14.4.9",
+    "inversify": "7.10.2",
+    "json-server": "1.0.0-beta.3",
+    "pino": "10.0.0",
+    "reflect-metadata": "0.2.2"
   }
 }
