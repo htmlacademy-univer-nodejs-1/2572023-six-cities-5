@@ -9,7 +9,7 @@
   ],
   "main": "main.js",
   "scripts": {
-    "start": "npm run build && node ./dist/main.js",
+    "start": "npm run build && node ./dist/main.rest.js",
     "build": "npm run clean && npm run compile",
     "lint": "eslint src/ --ext .ts",
     "compile": "tsc -p tsconfig.json",
@@ -36,6 +36,7 @@
   "dependencies": {
     "dayjs": "^1.11.18",
     "got": "^14.4.9",
-    "json-server": "^1.0.0-beta.3"
+    "json-server": "^1.0.0-beta.3",
+    "pino": "^10.0.0"
   }
 }
