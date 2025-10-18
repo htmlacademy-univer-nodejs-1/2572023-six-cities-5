@@ -3,6 +3,7 @@ import {
   GoodsType,
   Offer,
   OfferType,
+  UserType,
 } from '../types/index.js';
 
 export function createOffer(offerData: string): Offer {
@@ -24,6 +25,8 @@ export function createOffer(offerData: string): Offer {
     authorName,
     authorEmail,
     authorAvatar,
+    authorPassword,
+    authorType,
     commentsCount,
     location,
   ] = offerData.replace('\n', '').split('\t');
@@ -43,10 +46,11 @@ export function createOffer(offerData: string): Offer {
     personCount: Number.parseInt(personCount, 10),
     rentCost: Number.parseInt(rentCost, 10),
     author: {
-      firstname: authorName,
+      name: authorName,
       email: authorEmail,
-      lastname: authorName,
-      avatarPath: authorAvatar,
+      avatar: authorAvatar,
+      password: authorPassword,
+      type: authorType as UserType,
     },
     commentsCount: Number.parseInt(commentsCount, 10),
     location: {

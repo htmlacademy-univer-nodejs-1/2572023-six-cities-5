@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import 'reflect-metadata';
 import {
   CLIApplication,
   GenerateCommand,
@@ -13,7 +14,7 @@ function bootstrap() {
     new HelpCommand(),
     new VersionCommand(),
     new ImportCommand(),
-    new GenerateCommand()
+    new GenerateCommand(),
   ]);
 
   cliApplication.processCommand(process.argv);
