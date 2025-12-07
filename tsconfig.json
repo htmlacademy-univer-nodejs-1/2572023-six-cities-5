@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ES2022",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "declaration": true,
@@ -22,7 +22,7 @@
     "outDir": "./dist",
     "emitDecoratorMetadata": true,
     "types": [
-      "node",
+      "node"
     ],
     "lib": [
       "ESNext"
@@ -37,5 +37,6 @@
   ],
   "ts-node": {
     "esm": true
-  }
+  },
+  "files": ["./custom.d.ts"]
 }
